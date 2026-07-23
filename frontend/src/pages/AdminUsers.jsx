@@ -13,7 +13,7 @@ const AdminUsers = () => {
     e.preventDefault();
     setMessage('');
     try {
-      await axios.post('http://localhost:5000/api/admin/create-supervisor', { name, email, password }, {
+      await axios.post('https://ayantrai-intelligence.onrender.com/api/admin/create-supervisor', { name, email, password }, {
         headers: { Authorization: `Bearer ${token}` }
       });
       setMessage('Supervisor created successfully!');

@@ -9,7 +9,7 @@ const AdminDashboard = () => {
   useEffect(() => {
     const fetchInsights = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/admin/insights', {
+        const res = await axios.get('https://ayantrai-intelligence.onrender.com/api/admin/insights', {
           headers: { Authorization: `Bearer ${token}` }
         });
         setInsights(res.data);

@@ -8,7 +8,7 @@ const SupervisorViolations = () => {
 
   const fetchViolations = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/supervisor/violations', {
+      const res = await axios.get('https://ayantrai-intelligence.onrender.com/api/supervisor/violations', {
         headers: { Authorization: `Bearer ${token}` }
       });
       setViolations(res.data);

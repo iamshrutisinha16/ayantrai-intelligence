@@ -9,7 +9,7 @@ const AdminAlerts = () => {
   useEffect(() => {
     const fetchAlerts = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/admin/alerts', {
+        const res = await axios.get('https://ayantrai-intelligence.onrender.com/api/admin/alerts', {
           headers: { Authorization: `Bearer ${token}` }
         });
         setAlerts(res.data);
