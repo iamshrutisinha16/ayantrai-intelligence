@@ -23,7 +23,7 @@ const SupervisorViolations = () => {
 
   const handleAcknowledge = async (id) => {
     try {
-      await axios.put(`http://localhost:5000/api/supervisor/acknowledge/${id}`, {}, {
+      await axios.put(`https://ayantrai-intelligence.onrender.com/api/supervisor/acknowledge/${id}`, {}, {
         headers: { Authorization: `Bearer ${token}` }
       });
       fetchViolations();
@@ -34,7 +34,7 @@ const SupervisorViolations = () => {
 
   const simulateViolation = async () => {
     try {
-      await axios.post('http://localhost:5000/api/supervisor/simulate-violation', {}, {
+      await axios.post('https://ayantrai-intelligence.onrender.com/api/supervisor/simulate-violation', {}, {
         headers: { Authorization: `Bearer ${token}` }
       });
       fetchViolations();
