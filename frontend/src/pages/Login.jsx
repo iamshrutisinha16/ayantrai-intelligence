@@ -65,12 +65,6 @@ const Login = () => {
             Sign In
           </button>
         </form>
-
-        <div className="mt-6 text-xs text-slate-500 text-center bg-slate-950/50 p-3 rounded-lg border border-slate-800/50">
-          <p className="font-semibold text-slate-400 mb-1">Demo Credentials:</p>
-          <p>Admin: admin@ayantrai.com / admin123</p>
-          <p>Supervisor: supervisor@ayantrai.com / supervisor123</p>
-        </div>
       </div>
     </div>
   );
